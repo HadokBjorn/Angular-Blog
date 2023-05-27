@@ -1,15 +1,17 @@
 <nav>
     <img src="https://cdn.dribbble.com/users/297873/screenshots/10694373/media/dc1ee39bd96cddf2527d0817822d55f0.jpg?compress=1&resize=400x300&vertical=top"/>
-    <!-- <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">Github</a></li>
-    </ul> -->
-    <select>
-        <option></option>
-        <option><a href="">Home</a></option>
-        <option><a href="">Linkedin</a></option>
-        <option><a href="">Github</a></option>
-    </select>
-    
+    <div class="container-dropdown">
+        <span (click)="menuRender()" class="material-symbols-outlined">menu</span>
+        <ul [ngClass]="isRender">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/esau-bandeira/">Linkedin</a></li>
+            <li><a href="https://github.com/HadokBjorn">Github</a></li>
+        </ul>
+    </div>
+
+    <ul class="menu-web">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/esau-bandeira/">Linkedin</a></li>
+        <li><a href="https://github.com/HadokBjorn">Github</a></li>
+    </ul>
 </nav>

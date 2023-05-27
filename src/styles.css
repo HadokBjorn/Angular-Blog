@@ -9,6 +9,9 @@
 body{
     padding: 10px;
 }
+a{
+    text-decoration: none;
+}
 .container-small-card{
     width: 100%;
     margin-top: 20px;
@@ -17,4 +20,23 @@ body{
     gap: 15px;
     justify-content: center;
 
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.page-content{
+    padding-bottom: 200px;
+}
+
+@media screen and (min-width: 769px) {
+.page-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.container-small-card{
+    justify-content: space-between;
+    margin-top: 0;
+}
 }
