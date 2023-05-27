@@ -1,0 +1,27 @@
+div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+img{
+    display: block;
+    width: inherit;
+    height: 300px;
+    border-radius: 15px;
+}
+p{
+    width: inherit;
+}
+h2{
+    width: inherit;
+    font-size: 20px;
+    text-align: justify;
+}
+h3{
+    width: inherit;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
